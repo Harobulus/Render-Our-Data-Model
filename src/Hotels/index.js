@@ -1,13 +1,13 @@
 import React from "react";
-
-const renderHotel = () => null;
+import Hotel from "./Hotel.js"
+const renderHotel = (hotel) => <Hotel key={hotel.id} hotel={hotel}/>;
 
 const HotelsList = (props) => {
   if (!props.hotels) {
     return null;
   }
-
-  return <ul className="hotels-list">{}</ul>;
+const hotelListElments = props.hotels.map(renderHotel);
+  return <ul className="hotels-list">{hotelListElments}</ul>;
 };
 
 export default HotelsList;

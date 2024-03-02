@@ -49,7 +49,7 @@ const Hotel = (props) => (
           </span>
           <span>Includes taxes and charges</span>
           <button className="hotel__see-rooms">
-            See our last available rooms >
+            See our last available rooms
           </button>
         </div>
       </div>
